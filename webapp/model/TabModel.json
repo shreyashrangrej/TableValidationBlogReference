@@ -1,0 +1,44 @@
+{
+    "PeopleSet": [
+        {
+            "Name": "John David",
+            "Age": "25",
+            "BirthDate": "25-02-1997",
+            "Gender": "Male",
+            "Email": "john@test.com",
+            "PhoneNumber": "89898989"
+        },
+        {
+            "Name": "Kelly Robinson",
+            "Age": "26",
+            "BirthDate": "25-02-1996",
+            "Gender": "Male",
+            "Email": "kelly@test.com",
+            "PhoneNumber": "76767676"
+        },
+        {
+            "Name": "Sofia Solaris",
+            "Age": "24",
+            "BirthDate": "25-02-1999",
+            "Gender": "Female",
+            "Email": "sofia@test.com",
+            "PhoneNumber": "96969696"
+        },
+        {
+            "Name": "Peter Parker",
+            "Age": "22",
+            "BirthDate": "25-02-2000",
+            "Gender": "Male",
+            "Email": "peter@test.com",
+            "PhoneNumber": "75757575"
+        },
+        {
+            "Name": "Ally Clinton",
+            "Age": "21",
+            "BirthDate": "23-03-2001",
+            "Gender": "Female",
+            "Email": "john@test.com",
+            "PhoneNumber": "71717171"
+        }
+    ]
+}
