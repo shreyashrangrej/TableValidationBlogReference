@@ -1,0 +1,54 @@
+<mvc:View controllerName="com.app.Application.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}" >
+					<content>
+						<Toolbar>
+							<Button text="Save" press="onSave" icon="sap-icon://save" type="Accept" />
+						</Toolbar>
+						<Table id="idTable" items="{TabModel>/PeopleSet}" mode="MultiSelect">
+							<columns>
+								<Column>
+									<Label text="Name" />
+								</Column>
+								<Column>
+									<Label text="Age" />
+								</Column>
+								<Column>
+									<Label text="Birth Date" />
+								</Column>
+								<Column>
+									<Label text="Gender" />
+								</Column>
+								<Column>
+									<Label text="Email" />
+								</Column>
+								<Column>
+									<Label text="Phone Number" />
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Input value="{TabModel>Name}" />
+										<Input value="{TabModel>Age}" />
+										<DatePicker value="{TabModel>BirthDate}" displayFormat="dd-MM-yyyy" valueFormat="dd-MM-yyyy" />
+										<Select selectedKey="{TabModel>Gender}">
+											<core:Item text="-Select-" key="-Select-" />
+											<core:Item text="Male" key="Male" />
+											<core:Item text="Female" key="Female" />
+											<core:Item text="Other" key="Other" />
+										</Select>
+										<Input value="{TabModel>Email}" />
+										<Input value="{TabModel>PhoneNumber}" />
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
